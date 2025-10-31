@@ -1,18 +1,78 @@
-# React + Vite
+# Restaurante App 🍽️
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+Aplicación web desarrollada en React que muestra una carta de platos obtenidos desde la API pública de [TheMealDB]. 
 
-Currently, two official plugins are available:
+Cada plato se presenta con imagen, nombre, categoría y precio.
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react) uses [Babel](https://babeljs.io/) (or [oxc](https://oxc.rs) when used in [rolldown-vite](https://vite.dev/guide/rolldown)) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+---
 
-## React Compiler
+## 📸 Captura de pantalla
 
-The React Compiler is enabled on this template. See [this documentation](https://react.dev/learn/react-compiler) for more information.
+![Vista de la carta](./assert/captura-carta.png)
 
-Note: This will impact Vite dev & build performances.
+La imagen muestra la carta renderizada en el navegador, incluyendo el encabezado, los platos en cuadrícula con efecto `hover`, y el pie de página.
 
-## Expanding the ESLint configuration
+---
 
-If you are developing a production application, we recommend using TypeScript with type-aware lint rules enabled. Check out the [TS template](https://github.com/vitejs/vite/tree/main/packages/create-vite/template-react-ts) for information on how to integrate TypeScript and [`typescript-eslint`](https://typescript-eslint.io) in your project.
+## 🧾 Descripción técnica del proyecto
+
+### 🔗 Uso del endpoint indicado de TheMealDB
+
+Se ha utilizado el siguiente endpoint para obtener los datos de los platos:
+
+https://www.themealdb.com/api/json/v1/1/search.php?s=
+
+---
+
+### 🧩 Estructura modular de componentes
+El proyecto está dividido en componentes reutilizables:
+
+```
+src/
+├── hooks/
+│   └── useCarta.js
+├── components/
+│   ├── header/
+│   │   ├── cartaHeader.css
+│   │   └── CartaHeader.jsx
+│   ├── cartaMenu/
+│   │   └── item/
+│   │   │   ├── cartaItem.css
+│   │   │   └── CartaItem.jsx
+│   │   ├── cartaMenu.css
+│   │   └── CartaMenu.jsx
+│   └── footer/
+│       ├── cartaFooter.css
+│       └── CartaFooter.jsx
+├── App.jsx
+└── main.jsx
+```
+Cada componente tiene su propio archivo de estilos (.css) y responsabilidad visual clara.
+
+---
+
+## 🛠️ ¿Cómo se ha realizado la tarea?
+
+- Se ha utilizado el endpoint indicado de TheMealDB:  
+  `https://www.themealdb.com/api/json/v1/1/search.php?s=`
+- Se ha creado un hook personalizado `useCarta` para encapsular la lógica de carga y normalización de datos.
+- Los componentes se han estructurado de forma modular: `CartaHeader`, `CartaMenu`, `CartaFooter`, y `CartaItem`.
+- Se ha aplicado diseño visual con CSS: cuadrícula (`grid`), efectos `hover`, y armonización de fondo.
+- Los precios se han generado inicialmente de forma aleatoria, pero se ha previsto su sustitución por valores manuales.
+
+---
+
+## 📦 Dependencias instaladas
+
+```bash
+npm install react react-dom
+npm install vite
+```
+---
+
+## ✍️ Autor
+
+2º DAM Nocturno
+- David García Pasamar
+
+---
