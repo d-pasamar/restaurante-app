@@ -4,13 +4,16 @@ Aplicación web desarrollada en React que muestra una carta de platos obtenidos 
 
 Cada plato se presenta con imagen, nombre, categoría y precio.
 
+Ampliado: Se permite al usuario filtrar por nombre o categoría.
+
 ---
 
 ## 📸 Captura de pantalla
 
-![Vista de la carta](./src/assets/captura-carta.png)
+![Vista de la carta](./src/assets/captura-carta_2.png)
 
 La imagen muestra la carta renderizada en el navegador, incluyendo el encabezado, los platos en cuadrícula con efecto `hover`, y el pie de página.
+Se añade opción de filtrar por nombre o categoría.
 
 ---
 
@@ -36,6 +39,9 @@ src/
 │   ├── header/
 │   │   ├── cartaHeader.css
 │   │   └── CartaHeader.jsx
+│   ├── cartaFiltro/
+│   │   ├── cartaFiltro.css
+│   │   └── CartaFiltro.jsx
 │   ├── cartaMenu/
 │   │   └── item/
 │   │   │   ├── cartaItem.css
@@ -61,6 +67,8 @@ Cada componente tiene su propio archivo de estilos (.css) y responsabilidad visu
 - Los componentes se han estructurado de forma modular: `CartaHeader`, `CartaMenu`, `CartaFooter`, y `CartaItem`.
 - Se ha aplicado diseño visual con CSS: cuadrícula (`grid`), efectos `hover`, y armonización de fondo.
 - Los precios se han generado inicialmente de forma aleatoria, pero se ha previsto su sustitución por valores manuales.
+
+- El filtro se aplica en el componente CartaContainer, el cual ya le pasa a CartaMenu los items filtrados.
 
 ---
 
