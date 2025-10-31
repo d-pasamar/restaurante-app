@@ -1,6 +1,6 @@
 # Restaurante App 🍽️
 
-Aplicación web desarrollada en React que muestra una carta de platos obtenidos desde la API pública de [TheMealDB]. 
+Aplicación web desarrollada en React que muestra una carta de platos obtenidos desde la API pública de [TheMealDB].
 
 Cada plato se presenta con imagen, nombre, categoría y precio.
 
@@ -25,6 +25,7 @@ https://www.themealdb.com/api/json/v1/1/search.php?s=
 ---
 
 ### 🧩 Estructura modular de componentes
+
 El proyecto está dividido en componentes reutilizables:
 
 ```
@@ -47,6 +48,7 @@ src/
 ├── App.jsx
 └── main.jsx
 ```
+
 Cada componente tiene su propio archivo de estilos (.css) y responsabilidad visual clara.
 
 ---
@@ -68,11 +70,13 @@ Cada componente tiene su propio archivo de estilos (.css) y responsabilidad visu
 npm install react react-dom
 npm install vite
 ```
+
 ---
 
 ## ✍️ Autor
 
 2º DAM Nocturno
+
 - David García Pasamar
 
 ---
