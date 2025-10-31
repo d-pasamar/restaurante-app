@@ -8,7 +8,7 @@ Cada plato se presenta con imagen, nombre, categoría y precio.
 
 ## 📸 Captura de pantalla
 
-![Vista de la carta](./assert/captura-carta.png)
+![Vista de la carta](./src/assets/captura-carta.png)
 
 La imagen muestra la carta renderizada en el navegador, incluyendo el encabezado, los platos en cuadrícula con efecto `hover`, y el pie de página.
 
