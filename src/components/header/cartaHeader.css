@@ -1,0 +1,14 @@
+.carta-header {
+  text-align: center;
+  margin-bottom: 2rem;
+}
+
+.carta-header h1 {
+  font-size: 2rem;
+  margin-bottom: 0.5rem;
+}
+
+.carta-header p {
+  font-size: 1rem;
+  color: #555;
+}

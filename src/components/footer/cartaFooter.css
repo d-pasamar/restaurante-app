@@ -1,0 +1,38 @@
+.carta-footer {
+  background-color: #fdfdfd;
+  padding: 2rem;
+  text-align: center;
+  font-size: 0.95rem;
+  color: #444;
+  border-top: 1px solid #ddd;
+  margin-top: 3rem;
+}
+
+.carta-footer h1 {
+  font-size: 1.6rem;
+  margin-bottom: 0.5rem;
+  color: #333;
+}
+
+.carta-footer p {
+  margin: 0.3rem 0;
+  color: #555;
+}
+
+.carta-footer a {
+  display: inline-block;
+  margin-top: 1rem;
+  color: #0077cc;
+  text-decoration: none;
+  font-weight: 500;
+}
+
+.carta-footer a:hover {
+  text-decoration: underline;
+}
+
+.disclaimer {
+  margin-top: 1rem;
+  font-size: 0.85rem;
+  color: #777;
+}
