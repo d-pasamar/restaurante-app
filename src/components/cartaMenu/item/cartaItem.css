@@ -1,0 +1,32 @@
+.menu-card {
+  background-color: #fff;
+  border: 1px solid #ddd;
+  border-radius: 8px;
+  padding: 1rem;
+  text-align: center;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.05);
+}
+
+.menu-card img {
+  width: 100%;
+  height: auto;
+  border-radius: 6px;
+}
+
+.menu-card h3 {
+  margin: 0.5rem 0;
+  font-size: 1.2rem;
+  color: #333;
+}
+
+.menu-card p {
+  margin: 0.3rem 0;
+  color: #666;
+}
+
+.menu-card strong {
+  display: block;
+  margin-top: 0.5rem;
+  font-size: 1rem;
+  color: #0077cc;
+}
