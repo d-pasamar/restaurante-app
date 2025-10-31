@@ -1,4 +1,5 @@
 import CartaItem from "./item/CartaItem";
+import "./cartaMenu.css";
 
 export default function CartaMenu({ items, isLoading, error }) {
   if (isLoading) {
@@ -11,7 +12,7 @@ export default function CartaMenu({ items, isLoading, error }) {
 
   return (
     <>
-      <h2>Aqui va nuestro menú</h2>
+      <h2>Aqui va nuestro menú de hoy.</h2>
       <div className="menu-grid">
         {items.map((item) => (
           <CartaItem key={item.id} item={item} />

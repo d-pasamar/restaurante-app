@@ -5,6 +5,8 @@
   padding: 1rem;
   text-align: center;
   box-shadow: 0 2px 4px rgba(0, 0, 0, 0.05);
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+  cursor: default;
 }
 
 .menu-card img {
@@ -29,4 +31,11 @@
   margin-top: 0.5rem;
   font-size: 1rem;
   color: #0077cc;
+}
+
+.menu-card:hover {
+  background-color: #f9f9f9;
+  border-color: #ccc;
+  transform: scale(1.05);
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.15);
 }
