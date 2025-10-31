@@ -11,16 +11,17 @@ export default function CartaContainer() {
   const { items, isLoading, error } = useCarta();
   const [filtro, setFiltro] = useState("");
 
+  const filtrarItems = items.filter(
+    (meal) =>
+      meal.name.toLowerCase().includes(filtro.toLowerCase()) ||
+      meal.category.toLowerCase().includes(filtro.toLowerCase())
+  );
+
   return (
     <div className="carta">
       <CartaHeader />
       <CartaFiltro filtro={filtro} setFiltro={setFiltro} />
-      <CartaMenu
-        items={items}
-        isLoading={isLoading}
-        error={error}
-        filtro={filtro}
-      />
+      <CartaMenu items={filtrarItems} isLoading={isLoading} error={error} />
       <CartaFooter />
     </div>
   );
