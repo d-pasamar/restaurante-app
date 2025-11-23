@@ -1,15 +1,24 @@
-import { useState } from "react";
-import "./App.css";
+// import CartaContainer from "./components/CartaContainer";
+
+import { BrowserRouter, Route, Routes } from "react-router-dom";
+
+import Home from "./pages/Home";
+import About from "./pages/About";
 import CartaContainer from "./components/CartaContainer";
+import MainLayout from "./layout/MainLayout";
 
-function App() {
-  const [count, setCount] = useState(0);
+import "./App.css";
 
+export default function App() {
   return (
-    <>
-      <CartaContainer />
-    </>
+    <BrowserRouter>
+      <Routes>
+        <Route path="/" element={<MainLayout />}>
+          <Route index element={<Home />} />
+          <Route path="menu" element={<CartaContainer />} />
+          <Route path="about" element={<About />} />
+        </Route>
+      </Routes>
+    </BrowserRouter>
   );
 }
-
-export default App;

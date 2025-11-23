@@ -5,6 +5,14 @@
   text-align: center;
 }
 
+.main-content-wrapper {
+  /* Fondo azul degradado del menú, ahora aplicado globalmente */
+  background: linear-gradient(to right, #0077cc, #00b4d8);
+  min-height: 100vh; /* Asegura que ocupe toda la altura */
+  padding-bottom: 50px; /* Espacio extra sobre el footer */
+  padding-top: 3rem; /* Espacion entre el Navbar y el contenido de la página */
+}
+
 .logo {
   height: 6em;
   padding: 1.5em;

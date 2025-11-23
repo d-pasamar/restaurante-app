@@ -1,6 +1,5 @@
 import { useState } from "react";
 import useCarta from "../hooks/useCarta";
-import CartaFooter from "./footer/CartaFooter";
 import CartaHeader from "./header/CartaHeader";
 import CartaFiltro from "./cartaFiltro/CartaFiltro";
 import CartaMenu from "./cartaMenu/CartaMenu";
@@ -22,7 +21,6 @@ export default function CartaContainer() {
       <CartaHeader />
       <CartaFiltro filtro={filtro} setFiltro={setFiltro} />
       <CartaMenu items={filtrarItems} isLoading={isLoading} error={error} />
-      <CartaFooter />
     </div>
   );
 }
