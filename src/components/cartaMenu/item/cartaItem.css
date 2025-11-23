@@ -1,3 +1,10 @@
+/* src/components/cartaMenu/item/cartaItem.css */
+
+.menu-card-link {
+  text-decoration: none; /* Elimina el subrayado */
+  color: inherit; /* Mantiene el color del texto de la tarjeta */
+}
+
 .menu-card {
   background-color: #fff;
   border: 1px solid #ddd;
@@ -6,7 +13,7 @@
   text-align: center;
   box-shadow: 0 2px 4px rgba(0, 0, 0, 0.05);
   transition: transform 0.3s ease, box-shadow 0.3s ease;
-  cursor: default;
+  cursor: pointer;
 }
 
 .menu-card img {

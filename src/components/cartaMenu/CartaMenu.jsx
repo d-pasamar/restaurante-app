@@ -3,11 +3,11 @@ import "./cartaMenu.css";
 
 export default function CartaMenu({ items, isLoading, error }) {
   if (isLoading) {
-    return <p className="loading">Cargando platos...</p>;
+    return <p>Cargando platos...</p>;
   }
 
   if (error) {
-    return <p className="error">{error}</p>;
+    return <p>{error}</p>;
   }
 
   return (
