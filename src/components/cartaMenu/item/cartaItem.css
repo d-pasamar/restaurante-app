@@ -18,8 +18,10 @@
 
 .menu-card img {
   width: 100%;
-  height: auto;
-  border-radius: 6px;
+  max-height: 250px;
+  object-fit: cover;
+  /* height: auto; */
+  border-radius: 8px 8px 0 0;
 }
 
 .menu-card h3 {

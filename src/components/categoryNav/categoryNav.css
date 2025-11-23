@@ -1,0 +1,36 @@
+/* src/components/categoryNav.css */
+
+.category-nav {
+  background-color: #f5f5f5;
+  padding: 1rem 0;
+  text-align: center;
+  border-bottom: 1px solid #ddd;
+
+  /* Propiedades clave para la responsividad horizontal */
+  overflow-x: auto; /* Permite desplazamiento si la pantalla es pequeña */
+  white-space: nowrap; /* Mantiene todos los enlaces en una sola línea */
+  -webkit-overflow-scrolling: touch; /* Suaviza el scroll en iOS */
+}
+
+/* Estilo de los enlaces individuales (los tags/botones) */
+.category-nav a {
+  display: inline-block;
+  padding: 0.6rem 1.2rem;
+  margin: 0 0.4rem;
+  text-decoration: none;
+  font-weight: 600;
+  font-size: 0.95rem;
+  color: #333;
+  background-color: #fff;
+  border: 1px solid #ccc;
+  border-radius: 25px; /* Bordes muy redondeados tipo tag */
+  transition: background-color 0.2s, transform 0.1s;
+}
+
+.category-nav a:hover {
+  background-color: #0077cc;
+  color: white;
+  border-color: #0077cc;
+  transform: translateY(-2px); /* Pequeño efecto de elevación */
+  box-shadow: 0 3px 6px rgba(0, 0, 0, 0.1);
+}

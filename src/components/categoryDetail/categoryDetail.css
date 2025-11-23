@@ -1,0 +1,24 @@
+/* src/components/categoryDetail.css */
+
+.category-detail-header {
+  /* El contenedor principal de la cabecera */
+  background-color: transparent;
+  padding: 3rem 1rem;
+  text-align: center;
+  color: white;
+}
+
+.category-detail-header h1 {
+  /* Estilo del nombre de la categoría */
+  font-size: 3.5rem;
+  margin-bottom: 0.5rem;
+  font-weight: 700;
+  /* Para que el texto resalte sobre el fondo */
+  text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.3);
+}
+
+.category-detail-header p {
+  /* Estilo del texto de descripción */
+  font-size: 1.2rem;
+  opacity: 0.9;
+}

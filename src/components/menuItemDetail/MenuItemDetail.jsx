@@ -6,7 +6,7 @@ import useMealDetail from "../../hooks/useMealDetail";
 import "./menuItemDetail.css";
 
 export default function MenuItemDetail() {
-  const { idMeal } = useParams();
+  const { idMeal } = useParams(); // Obtiene el ID de la URL
   const location = useLocation();
   const consistentPrice = location.state?.price; // Se extrae el precio de CartaItem
   const { meal, isLoading, error } = useMealDetail(idMeal);
@@ -24,7 +24,6 @@ export default function MenuItemDetail() {
     return <p>Plato con ID: {idMeal} no encontrado. Vuelve al menú.</p>;
   }
 
-  // RENDERIZADO DEL DETALLE
   return (
     <div className="meal-detail-container">
       <h1>{meal.strMeal}</h1>

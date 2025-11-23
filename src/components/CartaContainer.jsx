@@ -3,6 +3,7 @@ import useCarta from "../hooks/useCarta";
 import CartaHeader from "./header/CartaHeader";
 import CartaFiltro from "./cartaFiltro/CartaFiltro";
 import CartaMenu from "./cartaMenu/CartaMenu";
+import CategoryNav from "./categoryNav/CategoryNav";
 
 import "./cartaContainer.css";
 
@@ -19,6 +20,7 @@ export default function CartaContainer() {
   return (
     <div className="carta">
       <CartaHeader />
+      <CategoryNav />
       <CartaFiltro filtro={filtro} setFiltro={setFiltro} />
       <CartaMenu items={filtrarItems} isLoading={isLoading} error={error} />
     </div>
