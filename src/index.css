@@ -1,3 +1,13 @@
+html,
+body,
+#root,
+.main-layout {
+  height: 100%; /* Asegura que todos los contenedores hereden la altura */
+  min-height: 100vh; /* Asegura que la altura mínima sea la altura de la ventana */
+  margin: 0;
+  padding: 0;
+}
+
 :root {
   font-family: system-ui, Avenir, Helvetica, Arial, sans-serif;
   line-height: 1.5;
@@ -24,8 +34,10 @@ a:hover {
 
 body {
   margin: 0;
+  /*
   display: flex;
   place-items: center;
+  */
   min-width: 320px;
   min-height: 100vh;
 }

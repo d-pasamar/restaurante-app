@@ -1,6 +1,6 @@
 // src/components/CategoryDetail.jsx
 import { useParams } from "react-router-dom";
-import useMealsByCategory from "../../hooks/useMealsByCategorie";
+import useMealsByCategory from "../../hooks/useMealsByCategory";
 import CartaMenu from "../cartaMenu/CartaMenu";
 
 import "./categoryDetail.css";
